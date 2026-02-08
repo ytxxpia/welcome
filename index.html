@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            min-height: 100vh;
+            background: url('https://free.boltp.com/2026/02/08/6988a8863db18.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .greeting {
+            font-size: 76px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #F1FFF6;
+            letter-spacing: 1px;
+        }
+        
+        .search-container {
+            margin-bottom: 15px;
+        }
+        
+        .search-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 18px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .search-button {
+            padding: 18px 30px;
+            background: #F1FFF6;
+            color: #333;
+            border: none;
+            border-radius: 0 50px 50px 0;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Microsoft YaHei", sans-serif;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .search-button:hover {
+            background: #E0F0E6;
+        }
+        
+        .quote {
+            font-size: 22px;
+            font-weight: bold;
+            color: #F1FFF6;
+            line-height: 1.4;
+            padding: 10px 0;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .greeting {
+                font-size: 60px;
+                margin-bottom: 15px;
+            }
+            
+            .search-form {
+                max-width: 90%;
+            }
+            
+            .quote {
+                font-size: 20px;
+                max-width: 90%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .greeting {
+                font-size: 48px;
+            }
+            
+            .search-input, .search-button {
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+            
+            .quote {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="greeting">你好!</h1>
+        
+        <div class="search-container">
+            <form class="search-form" action="https://www.baidu.com/s" method="get" target="_blank">
+                <input type="text" class="search-input" name="wd" placeholder="搜索..." required>
+                <button type="submit" class="search-button">Go!</button>
+            </form>
+        </div>
+        
+        <div class="quote">
+            生活就像海洋，只有意志坚强的人才能到达彼岸
+        </div>
+    </div>
+</body>
+</html>
